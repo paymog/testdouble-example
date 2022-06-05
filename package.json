@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "mongodb-memory-server": "^8.6.0"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS='--loader @cspotcode/multiloader/compose?testdouble,ts-node/esm' mocha --exit --timeout 60000 src/**/*.test.ts"
+  },
+  "dependencies": {
+    "@cspotcode/multiloader": "^0.0.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "mongo-uri-tool": "^1.0.1",
+    "mongodb": "^4.6.0",
+    "slugify": "^1.6.5",
+    "testdouble": "^3.16.5",
+    "ts-node": "^10.8.1"
+  }
+}
